@@ -5,12 +5,39 @@
 body {
   font-family: type.$font;
   background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
 }
 
 h1 {
   color: var.$primary-color;
   text-align: center;
+}
+
+.card {
+  width: 400px;
+  .card__content {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 5em;
+    transition: transform 3s;
+    background: pink;
+    transform-style: preserve-3d;
+    .card__front, .card__back {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2em;
+    }
+    .card__title {
+      font-size: 3rem;
+      position: relative;
+      transform: translateZ(200px);
+    }
+  }
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
 }
