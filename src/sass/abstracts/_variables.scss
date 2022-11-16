@@ -9,11 +9,11 @@ $bg-medium: $bg-color;
 $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
-$neutral-grey-100: hsl(1, 1, 95);
-$neutral-grey-200: hsl(1, 1, 80);
-$neutral-grey-300: hsl(1, 1, 55);
-$neutral-grey-500: hsl(1, 1, 35);
-$neutral-grey-600: hsl(1, 1, 10);
+$neutral-grey-100: hsl(1, 1%, 95%);
+$neutral-grey-200: hsl(1, 1%, 80%);
+$neutral-grey-300: hsl(1, 1%, 55%);
+$neutral-grey-500: hsl(1, 1%, 35%);
+$neutral-grey-600: hsl(1, 1%, 10%);
 
 $accent-green-100: hsl(79, 100%, 50%);
 $accent-green-200: hsl(79, 76%, 42%);
