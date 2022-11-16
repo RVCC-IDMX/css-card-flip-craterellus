@@ -14,6 +14,7 @@ h1 {
 
 .card {
   width: 400px;
+  margin-inline: auto;
   .card__content {
     text-align: center;
     position: relative;
@@ -29,15 +30,30 @@ h1 {
       left: 0;
       right: 0;
       padding: 2em;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
     }
     .card__title {
       font-size: 3rem;
       position: relative;
-      transform: translateZ(200px);
+      transform: translateZ(5rem);
     }
   }
 }
 
+.card__subtitle {
+  transform: translateZ(3rem);
+}
+
+.card__body {
+  transform: translateZ(3rem);
+}
+
 .card:hover .card__content {
   transform: rotateY(.5turn);
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+  background: lightblue;
 }
