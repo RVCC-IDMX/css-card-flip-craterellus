@@ -9,22 +9,23 @@ $bg-medium: $bg-color;
 $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
+$neutral-grey-100: hsl(1, 1, 95);
+$neutral-grey-200: hsl(1, 1, 80);
+$neutral-grey-300: hsl(1, 1, 55);
+$neutral-grey-500: hsl(1, 1, 35);
+$neutral-grey-600: hsl(1, 1, 10);
 
-$primary-color: rebeccapurple;
-$primary-very-light: func.tint($primary-color, 50%);
-$primary-light: func.tint($primary-color, 25%);
-$primary-medium: $primary-color;
-$primary-dark: func.shade($primary-color, 25%);
-$primary-very-dark: func.shade($primary-color, 50%);
+$accent-green-100: hsl(79, 100%, 50%);
+$accent-green-200: hsl(79, 76%, 42%);
+$accent-green-300: hsl(77, 43%, 41%);
 
-$neutral-grey-100: hsl(0, 0, 95);
-$neutral-grey-200: hsl(0, 0, 80);
-$neutral-grey-300: hsl(0, 0, 55);
-$neutral-grey-500: hsl(0, 0, 35);
-$neutral-grey-600: hsl(0, 0, 10);
+$bg-green: hsl(125, 20%, 23%);
 
-$accent-green-100: hsl(50, 70, 70);
-$accent-green-200: hsl(50, 70, 70);
-$accent-green-300: hsl(160, 70, 50);
-$accent-green-400: hsl(50, 70, 70);
-$accent-green-500: hsl(50, 70, 70);
+$neutral-green-100: hsl(76, 47%, 90%);
+$neutral-green-200: hsl(76, 25%, 79%);
+$neutral-green-400: hsl(124, 15%, 42%);
+
+$accent-red-100: hsl(14, 81%, 65%);
+$accent-red-300: hsl(14, 75%, 40%);
+
+$accent-yellow-100: hsl(43, 42%, 58%);
