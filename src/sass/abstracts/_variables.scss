@@ -2,7 +2,7 @@
 
 @use "./functions" as func;
 
-$bg-color: gold;
+$bg-color: rgb(244, 244, 244);
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
 $bg-medium: $bg-color;
@@ -16,3 +16,15 @@ $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
+
+$neutral-grey-100: hsl(0, 0, 95);
+$neutral-grey-200: hsl(0, 0, 80);
+$neutral-grey-300: hsl(0, 0, 55);
+$neutral-grey-500: hsl(0, 0, 35);
+$neutral-grey-600: hsl(0, 0, 10);
+
+$accent-green-100: hsl(50, 70, 70);
+$accent-green-200: hsl(50, 70, 70);
+$accent-green-300: hsl(160, 70, 50);
+$accent-green-400: hsl(50, 70, 70);
+$accent-green-500: hsl(50, 70, 70);

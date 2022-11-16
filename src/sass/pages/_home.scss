@@ -29,7 +29,7 @@ h3 {
     .card__front, .card__back {
       width: 430px;
       height: 600px;
-      border: 10px solid rgb(26, 61, 54);
+      border: 15px solid rgb(64, 64, 21);
       border-radius: 2rem;
       position: absolute;
       top: 0;
@@ -44,7 +44,7 @@ h3 {
       font-size: 3.8rem;
       line-height: 1.2;
       letter-spacing: -0.1em;
-      text-shadow: 3px 3px #ffffff;
+      text-shadow: 0 0 25px #aeff00, 0 0 3px #0000FF;
       position: relative;
       transform: translateZ(4rem);
       &.upside-down{
@@ -57,7 +57,7 @@ h3 {
 /* Front */
 
 .card__front {
-  background: #bbb;
+  background: var.$neutral-grey-200;
   .card__front-img {
     transform: translateZ(3rem);
     width: 350px;
@@ -86,11 +86,18 @@ h3 {
 
 .card__back {
   transform: rotateY(.5turn);
-  background: lightblue;
+  background: var.$neutral-grey-200;
   .card__back-img {
     transform: translateZ(3rem);
-    padding: .5rem;
-    border: 4px solid red;
+    padding-block: .2rem;
+    border: 4px double var.$neutral-grey-600;
+    background: rgb(20,26,60);
+    background: radial-gradient(circle, rgba(20,26,60,1) 0%, rgba(237,234,139,1) 100%);
     border-radius: 2rem;
   }
+}
+
+.card__body-text {
+  margin-inline: 2em;
+  margin-block: 1em;
 }
