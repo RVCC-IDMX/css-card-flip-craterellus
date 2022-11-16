@@ -3,7 +3,7 @@
 @use "../base/typography" as type;
 
 body {
-  font-family: type.$font;
+  font-family: type.$bodyfont;
   background-color: var.$bg-very-light;
 }
 
@@ -12,10 +12,14 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-family: type.$titlefont;
+}
+
 .card {
   width: 400px;
   margin-inline: auto;
-  .card__content {
+  &__content {
     text-align: center;
     position: relative;
     z-index: 0;
@@ -25,7 +29,7 @@ h1 {
     .card__front, .card__back {
       width: 430px;
       height: 600px;
-      border: 10px solid rgb(54, 85, 79);
+      border: 10px solid rgb(26, 61, 54);
       border-radius: 2rem;
       position: absolute;
       top: 0;
@@ -37,19 +41,34 @@ h1 {
       backface-visibility: hidden;
     }
     .card__title {
-      font-size: 3rem;
+      font-size: 3.8rem;
+      line-height: 1.2;
+      letter-spacing: -0.1em;
+      text-shadow: 3px 3px #ffffff;
       position: relative;
       transform: translateZ(4rem);
+      &.upside-down{
+        transform: translateZ(4rem) rotateZ(180deg);
+      }
     }
   }
 }
 
+/* Front */
+
 .card__front {
-  background: lightgreen;
+  background: #bbb;
   .card__front-img {
     transform: translateZ(3rem);
+    width: 350px;
+    margin-block: auto;
   }
 }
+
+.card__title.upside-down {
+  transform: rotateZ(180deg);
+}
+
 
 .card__subtitle {
   transform: translateZ(3rem);
@@ -63,10 +82,15 @@ h1 {
   transform: rotateY(.5turn);
 }
 
+/* Back */
+
 .card__back {
   transform: rotateY(.5turn);
   background: lightblue;
   .card__back-img {
     transform: translateZ(3rem);
+    padding: .5rem;
+    border: 4px solid red;
+    border-radius: 2rem;
   }
 }

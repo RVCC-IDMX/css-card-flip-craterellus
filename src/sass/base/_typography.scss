@@ -1,8 +1,28 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: "Eater";
+  src: url("../../fonts/Eater-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
 
-$font: "Poppins", serif;
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../fonts/SourceSansPro-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url("../../fonts/SourceSansPro-Bold.ttf") format("opentype");
+  font-style: bold;
+}
+
+$titlefont: "Eater", serif;
+$bodyfont: "Source Sans Pro", sans;
+$bodybold: "Source Sans Pro Bold", sans;
 
 // body font styling vars
 $body-font-size: 120%;
@@ -10,7 +30,7 @@ $body-font-weight: 350;
 $body-italic-weight: 100;
 
 // display font styling vars
-$display-font: $font;
+$display-font: $bodyfont;
 $display-weight: 900;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;
