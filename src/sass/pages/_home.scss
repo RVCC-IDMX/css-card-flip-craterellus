@@ -21,9 +21,12 @@ h1 {
     z-index: 0;
     padding: 5em;
     transition: transform 3s;
-    background: pink;
     transform-style: preserve-3d;
     .card__front, .card__back {
+      width: 430px;
+      height: 600px;
+      border: 10px solid rgb(54, 85, 79);
+      border-radius: 2rem;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -36,8 +39,15 @@ h1 {
     .card__title {
       font-size: 3rem;
       position: relative;
-      transform: translateZ(5rem);
+      transform: translateZ(4rem);
     }
+  }
+}
+
+.card__front {
+  background: lightgreen;
+  .card__front-img {
+    transform: translateZ(3rem);
   }
 }
 
@@ -56,4 +66,7 @@ h1 {
 .card__back {
   transform: rotateY(.5turn);
   background: lightblue;
+  .card__back-img {
+    transform: translateZ(3rem);
+  }
 }
